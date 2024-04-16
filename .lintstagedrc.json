@@ -1,0 +1,4 @@
+{
+	"*.{ts,html,json,scss,js,tsx,jsx}": ["npm run format"],
+	"*.{ts,tsx,html,js,jsx}": ["npm run eslint"]
+}

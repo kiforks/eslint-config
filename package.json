@@ -1,0 +1,96 @@
+{
+	"name": "@kiforks/eslint-config",
+	"description": "eslint shareable config",
+	"version": "1.0.0",
+	"engines": {
+		"node": ">=20.8.1"
+	},
+	"scripts": {
+		"update": "ncu -u && npm install",
+		"eslint": "npx eslint '**/*.{ts,html,js}' --quiet",
+		"eslint:fix": "npx eslint '**/*.{ts,html,js}' --quiet --fix",
+		"format": "npx prettier '**/*.{ts,html,js,json,yml}' --check",
+		"format:fix": "npx prettier '**/*.{ts,html,js,json,yml}' --write",
+		"prepare": "husky",
+		"prerelease": "npm run eslint && npm run format"
+	},
+	"type": "module",
+	"files": [
+		"test.js",
+		"jest.js",
+		"jasmine.js.js",
+		"typescript.js",
+		"angular-template.js",
+		"angular-typescript.js"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Kifor Kostiantyn",
+		"email": "kifor.ko@gmail.com"
+	},
+	"homepage": "https://github.com/kiforks/eslint-config#readme",
+	"bugs": {
+		"url": "https://github.com/kiforks/eslint-config/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kiforks/eslint-config.git"
+	},
+	"keywords": [
+		"Kifor Kostiantyn",
+		"code",
+		"quality",
+		"style",
+		"lint",
+		"linter",
+		"eslint",
+		"validate",
+		"code style",
+		"strict",
+		"check",
+		"checker",
+		"enforce",
+		"hint",
+		"code lint",
+		"kiforko",
+		"kiforks",
+		"kskifor",
+		"eslint",
+		"eslint-config",
+		"eslint config",
+		"kifor"
+	],
+	"dependencies": {
+		"@angular-eslint/builder": "19.0.2",
+		"@angular-eslint/eslint-plugin": "19.0.2",
+		"@angular-eslint/eslint-plugin-template": "19.0.2",
+		"@angular-eslint/schematics": "19.0.2",
+		"@angular-eslint/template-parser": "19.0.2",
+		"@eslint/js": "^9.17.0",
+		"@stylistic/eslint-plugin-js": "^2.12.1",
+		"@stylistic/eslint-plugin-ts": "^2.12.1",
+		"@typescript-eslint/eslint-plugin": "^8.18.1",
+		"angular-eslint": "^19.0.2",
+		"eslint-config-angular-strict": "^1.1.5",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-jasmine": "^4.2.2",
+		"eslint-plugin-jest": "^28.9.0",
+		"eslint-plugin-max-params-no-constructor": "^0.0.4",
+		"eslint-plugin-prettier": "^5.2.1",
+		"eslint-scope": "8.2.0",
+		"prettier": "^3.4.2",
+		"typescript-eslint": "^8.18.1",
+		"@typescript-eslint/parser": "^8.18.1"
+	},
+	"peerDependencies": {
+		"eslint": "^9.16.0"
+	},
+	"devDependencies": {
+		"@kiforks/prettier-config": "^1.0.0",
+		"husky": "^9.1.7",
+		"typescript": "^5.7.2"
+	}
+}
