@@ -1,7 +1,7 @@
 # @kiforks/eslint-config
 
 [![npm version](https://img.shields.io/npm/v/@kiforks/eslint-config?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@kiforks/eslint-config)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/kiforks/eslint-config/deploy.yml?query=workflow%3Adeploys&logo=github)](https://github.com/kiforks/eslint-config/actions/workflows/deploy.yml?query=workflow%3Adeploy)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/kiforks/eslint-config/cd.yml?query=workflow%3Adeploys&logo=github)](https://github.com/kiforks/eslint-config/actions/workflows/cd.yml?query=workflow%3Adeploy)
 [![Downloads per month](https://img.shields.io/npm/dm/@kiforks/eslint-config)](https://npmcharts.com/compare/@kiforks/eslint-config)
 
 Created by [Kifor Kostiantyn][author-url]
