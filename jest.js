@@ -1,12 +1,7 @@
-import js from '@eslint/js';
-
 import configs from 'eslint-plugin-jest';
 
 /** @type { import("eslint").Linter.Config[] } */
 const config = [
-	js.configs.recommended,
-	js.configs.all,
-
 	configs['flat/recommended'],
 	configs['flat/style'],
 	configs['flat/all'],
