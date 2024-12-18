@@ -18,7 +18,7 @@
 	"files": [
 		"test.js",
 		"jest.js",
-		"jasmine.js.js",
+		"jasmine.js",
 		"typescript.js",
 		"angular-template.js",
 		"angular-typescript.js"
