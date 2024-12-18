@@ -2,6 +2,7 @@ import tsParser from '@typescript-eslint/parser';
 
 import typescript from './typescript.js';
 
+/** @type { import("eslint").Linter.Config[] } */
 export default [
 	...typescript.map(config => ({
 		...config,

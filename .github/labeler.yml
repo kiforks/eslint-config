@@ -13,7 +13,7 @@ ci:
 
 configuration:
   - changed-files:
-      - any-glob-to-any-file: 'src/**/*.js'
+      - any-glob-to-any-file: '**/*.js'
 
 docs:
   - changed-files:
