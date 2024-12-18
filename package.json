@@ -1,7 +1,7 @@
 {
 	"name": "@kiforks/eslint-config",
 	"description": "eslint shareable config",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"node": ">=20.8.1"
 	},
@@ -18,7 +18,7 @@
 	"files": [
 		"test.js",
 		"jest.js",
-		"jasmine.js.js",
+		"jasmine.js",
 		"typescript.js",
 		"angular-template.js",
 		"angular-typescript.js"
