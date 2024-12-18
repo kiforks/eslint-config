@@ -10,7 +10,6 @@ Brief description of changes to the ESLint configuration or linting behavior (ma
 ## Checklist
 
 - [ ] Changes tested locally with `eslint "<your-files-glob>"`.
-- [ ] Updated `.eslintrc` if changes were made.
 - [ ] Documentation updated (if needed).
 
 ## Additional Notes
