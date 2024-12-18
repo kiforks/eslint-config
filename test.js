@@ -1,15 +1,12 @@
-import angular from 'angular-eslint';
 import tseslint from 'typescript-eslint';
 
 /** @type { import("eslint").Linter.Config[] } */
 export default tseslint.config({
 	files: ['**/*.spec.ts', '**/*.host.ts', '**/*.po.ts'],
-	extends: [...angular.configs.tsRecommended, ...angular.configs.tsAll],
-	processor: angular.processInlineTemplates,
 	rules: {
 		/* General */
-		'max-nested-callbacks': 'off', // Avoid this rule in tests because "describe" and "it" are also counted as callbacks
-		'max-params-no-constructor/max-params-no-constructor': 'off', // this is not really useful in tests and would error the "inject" function
+		'max-nested-callbacks': 'off',
+		'max-params-no-constructor/max-params-no-constructor': 'off',
 
 		/* Typescript */
 		'@typescript-eslint/no-non-null-assertion': 'off',
@@ -19,5 +16,9 @@ export default tseslint.config({
 		'@angular-eslint/prefer-on-push-component-change-detection': 'off',
 
 		'max-lines': 'off',
+		'max-nesting-depth': 'off',
+		'no-magic-numbers': 'off',
+		'max-statements': 'off',
+		'max-lines-per-function': 'off',
 	},
 });

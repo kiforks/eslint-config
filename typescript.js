@@ -35,10 +35,7 @@ const config = [
 			],
 
 			// Public/private modifiers
-			'@typescript-eslint/explicit-member-accessibility': [
-				'error',
-				{ overrides: { constructors: 'no-public' } }, // constructor is an exeption
-			],
+			'@typescript-eslint/explicit-member-accessibility': ['error', { overrides: { constructors: 'no-public' } }],
 
 			// Order
 			'@typescript-eslint/member-ordering': [
@@ -157,7 +154,6 @@ const config = [
 			'no-restricted-syntax': [
 				'error',
 
-				// ban "this" in static methods
 				{
 					selector: 'MethodDefinition[static = true] ThisExpression',
 					message: 'Unexpected "this" in static method. Use class name instead.',
@@ -215,6 +211,7 @@ const config = [
 ];
 
 /** @type { import("eslint").Linter.Config[] } */
+// eslint-disable-next-line no-shadow
 export default config.map(config => ({
 	...config,
 	files: ['**/*.ts', '**/*.tsx'],

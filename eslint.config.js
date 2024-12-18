@@ -2,6 +2,8 @@ import tsParser from '@typescript-eslint/parser';
 
 import typescript from './typescript.js';
 
+import javascript from './javascript.js';
+
 /** @type { import("eslint").Linter.Config[] } */
 export default [
 	...typescript.map(config => ({
@@ -17,6 +19,22 @@ export default [
 			},
 		},
 	})),
+	...javascript,
+
+	{
+		rules: {
+			'require-unicode-regexp': 'off',
+			'sort-keys': 'off',
+			'no-undef': 'off',
+			'sort-vars': 'off',
+			'one-var': 'off',
+			'max-lines': 'off',
+			'max-nesting-depth': 'off',
+			'no-magic-numbers': 'off',
+			'max-statements': 'off',
+			'max-lines-per-function': 'off',
+		},
+	},
 
 	{
 		ignores: [
