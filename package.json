@@ -11,6 +11,8 @@
 		"eslint:fix": "npx eslint '**/*.{ts,html,js}' --quiet --fix",
 		"format": "npx prettier '**/*.{ts,html,js,json,yml}' --check",
 		"format:fix": "npx prettier '**/*.{ts,html,js,json,yml}' --write",
+		"lint": "npm run eslint && npm run format",
+		"lint:fix": "npm run eslint:fix && npm run format:fix",
 		"prepare": "husky",
 		"prerelease": "npm run eslint && npm run format"
 	},
