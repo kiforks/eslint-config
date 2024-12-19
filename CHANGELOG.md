@@ -1,5 +1,21 @@
 # 📝 Changelog
 
+## [1.1.2] - 2024-12-20
+
+### 🐛 Fixes
+
+- **JavaScript Configuration Build**  
+  Added the missing `javascript.js` file to the `files` field in `package.json` to fix the build and ensure proper publishing.  
+  [🔗 PR #7](https://github.com/kiforks/stylelint-config/pull/7) by [@kiforks](https://github.com/kiforks)
+
+### 📚 Documentation
+
+- **README Update**  
+  Updated the `README` file to include information about the new JavaScript configuration.  
+  [🔗 PR #7](https://github.com/kiforks/stylelint-config/pull/7) by [@kiforks](https://github.com/kiforks)
+
+---
+
 ## [1.1.1] - 2024-12-19
 
 ### 🔄 Updates
