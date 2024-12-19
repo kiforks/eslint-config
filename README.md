@@ -52,6 +52,7 @@ import kiforJasmine from '@kiforks/eslint-config/tests-jasmine.js';
 import kiforJest from '@kiforks/eslint-config/tests-jest.js';
 import kiforTests from '@kiforks/eslint-config/tests.js';
 import kiforTypescript from '@kiforks/eslint-config/typescript.js';
+import kiforJavascript from '@kiforks/eslint-config/javascript.js';
 
 /** @type { import("eslint").Linter.Config[] } */
 export default [
@@ -65,6 +66,7 @@ export default [
       },
     },
   })),
+  ...kiforJavascript,
   ...kiforAngularTemplate,
   ...kiforAngularTypescript,
   ...kiforTests,
