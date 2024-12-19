@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Define maximum commit message length
-max_length=100
+max_length=125
 
 # Regular expression for valid commit message format (only checks the first line)
 commit_regex="^(feat|fix|build|chore|ci|docs|perf|refactor|revert|style|test) \[(DEV|GEN)-[0-9]{1,}\]: [A-Z][a-zA-Z0-9 ]+$"
