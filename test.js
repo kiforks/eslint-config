@@ -20,5 +20,6 @@ export default tseslint.config({
 		'no-magic-numbers': 'off',
 		'max-statements': 'off',
 		'max-lines-per-function': 'off',
+		'init-declarations': 'off',
 	},
 });
