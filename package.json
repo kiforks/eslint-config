@@ -1,7 +1,7 @@
 {
 	"name": "@kiforks/eslint-config",
 	"description": "eslint shareable config",
-	"version": "1.1.2",
+	"version": "1.2.0",
 	"engines": {
 		"node": ">=20.8.1"
 	},
@@ -24,7 +24,8 @@
 		"typescript.js",
 		"angular-template.js",
 		"angular-typescript.js",
-		"javascript.js"
+		"javascript.js",
+		"disable-recommend.js"
 	],
 	"publishConfig": {
 		"access": "public"
