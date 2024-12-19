@@ -93,6 +93,30 @@ export default [
 ];
 ```
 
+## Disable Recommend Configuration
+
+The `disable-recommend` configuration is designed to disable certain ESLint rules that enforce stricter coding practices, giving developers more flexibility when needed. This can be useful in scenarios where specific recommendations are not suitable for your project's requirements.
+
+### Purpose
+
+- **Flexibility**: Allows you to bypass overly strict linting rules.
+- **Customization**: Focus on rules that align with your project's coding style.
+- **Ease of Development**: Reduces friction when rapid prototyping or working with legacy code.
+
+### Usage
+
+In your `eslint.config.js`, extend the `disable-recommend` configuration:
+
+```javascript
+import kiforDisableRecommend from '@kiforks/eslint-config/disable-recommend.js';
+
+/** @type { import("eslint").Linter.Config[] } */
+export default [
+  ...kiforDisableRecommend,
+];
+````
+
+
 ## Usage in VSCode
 
 1. Install ESLint and the configuration.
