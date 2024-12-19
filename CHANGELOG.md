@@ -1,5 +1,21 @@
 # 📝 Changelog
 
+## [1.2.0] - 2024-12-21
+
+### ✨ New Features
+
+- **Disable Recommend Configuration**  
+  Added a new `disable-recommend` configuration with custom rules for stricter linting control.  
+  [🔗 PR #8](https://github.com/kiforks/eslint-config/pull/8) by [@kiforks](https://github.com/kiforks)
+
+### 📚 Documentation
+
+- **README Update**  
+  Updated the `README` file to include information about the new `disable-recommend` configuration.  
+  [🔗 PR #8](https://github.com/kiforks/eslint-config/pull/8) by [@kiforks](https://github.com/kiforks)
+
+---
+
 ## [1.1.2] - 2024-12-20
 
 ### 🐛 Fixes
