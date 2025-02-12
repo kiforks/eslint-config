@@ -109,19 +109,19 @@ const config = [
 			'@typescript-eslint/naming-convention': [
 				'error',
 				{
-					'selector': ['variable', 'classProperty'],
-					'modifiers': ['public', 'readonly', 'static'],
-					'format': ['PascalCase'],
+					selector: ['variable', 'classProperty'],
+					modifiers: ['public', 'readonly', 'static'],
+					format: ['PascalCase'],
 				},
-				{ 'selector': ['enumMember'], 'format': ['PascalCase'] },
+				{ selector: ['enumMember'], format: ['PascalCase'] },
 			],
 			'no-restricted-imports': [
 				'error',
 				{
-					'paths': [
+					paths: [
 						{
-							'name': 'rxjs/operators',
-							'message': "Use 'rxjs' instead.",
+							name: 'rxjs/operators',
+							message: "Use 'rxjs' instead.",
 						},
 					],
 				},
