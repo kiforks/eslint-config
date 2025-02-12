@@ -1,5 +1,27 @@
 # 📝 Changelog
 
+## [1.2.1] - 2025-02-12
+
+### ✨ New Features
+
+- **Package Updates & Formatting**  
+  Updated package versions and ran Prettier to maintain code style consistency.  
+  [🔗 PR #9](https://github.com/kiforks/eslint-config/pull/9) by [@kiforks](https://github.com/kiforks)
+
+- **Jest Configuration Cleanup**  
+  Removed unnecessary disabled rules from the Jest configuration for improved maintainability.  
+  [🔗 PR #9](https://github.com/kiforks/eslint-config/pull/9) by [@kiforks](https://github.com/kiforks)
+
+- **Disable Recommend Configuration**  
+  Added explicit file extensions for the `disable-recommend` configuration to improve rule application.  
+  [🔗 PR #9](https://github.com/kiforks/eslint-config/pull/9) by [@kiforks](https://github.com/kiforks)
+
+- **Sorting Rule Adjustment**  
+  Disabled the `sort-imports` rule for test configurations to allow greater flexibility in test structuring.  
+  [🔗 PR #9](https://github.com/kiforks/eslint-config/pull/9) by [@kiforks](https://github.com/kiforks)
+
+---
+
 ## [1.2.0] - 2024-12-21
 
 ### ✨ New Features
