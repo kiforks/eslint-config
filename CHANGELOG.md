@@ -1,5 +1,15 @@
 # 📝 Changelog
 
+## [1.2.2] - 2025-02-20
+
+### 🔄 Updates
+
+- **TypeScript Configuration Cleanup**  
+  Removed `@typescript-eslint/explicit-function-return-type` from the TypeScript configuration file to simplify code readability and developer experience.  
+  [🔗 PR #10](https://github.com/kiforks/eslint-config/pull/10) by [@kiforks](https://github.com/kiforks)
+
+---
+
 ## [1.2.1] - 2025-02-12
 
 ### ✨ New Features
