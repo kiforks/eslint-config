@@ -1,5 +1,15 @@
 # 📝 Changelog
 
+## [1.2.3] - 2025-02-20
+
+### 🔄 Updates
+
+- **Package Downgrade**  
+  Downgraded the `eslint-config-prettier` package version for improved compatibility with existing configurations.  
+  [🔗 PR #11](https://github.com/kiforks/eslint-config/pull/11) by [@kiforks](https://github.com/kiforks)
+
+---
+
 ## [1.2.2] - 2025-02-20
 
 ### 🔄 Updates
