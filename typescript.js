@@ -24,6 +24,18 @@ const config = [
 			'@typescript-eslint/await-thenable': 'error',
 			'@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
 			'@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{
+					args: 'all',
+					argsIgnorePattern: '^_',
+					caughtErrors: 'all',
+					caughtErrorsIgnorePattern: '^_',
+					destructuredArrayIgnorePattern: '^_',
+					varsIgnorePattern: '^_',
+					ignoreRestSiblings: true,
+				},
+			],
 			'@typescript-eslint/ban-ts-comment': [
 				'error',
 				{
