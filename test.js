@@ -22,5 +22,6 @@ export default tseslint.config({
 		'max-lines-per-function': 'off',
 		'init-declarations': 'off',
 		'sort-imports': 'off',
+		'prefer-destructuring': 'off',
 	},
 });

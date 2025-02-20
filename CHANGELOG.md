@@ -1,5 +1,21 @@
 # 📝 Changelog
 
+## [1.2.4] - 2025-02-20
+
+### ✨ New Features
+
+- **No Unused Variables Rule**  
+  Added the `@typescript-eslint/no-unused-vars` rule to the TypeScript configuration to prevent unused variables and enhance code cleanliness.  
+  [🔗 PR #12](https://github.com/kiforks/eslint-config/pull/12) by [@kiforks](https://github.com/kiforks)
+
+### 🔄 Updates
+
+- **Test Configuration Adjustment**  
+  Turned off the `prefer-destructuring` rule for test files to improve test flexibility and developer experience.  
+  [🔗 PR #12](https://github.com/kiforks/eslint-config/pull/12) by [@kiforks](https://github.com/kiforks)
+
+---
+
 ## [1.2.3] - 2025-02-20
 
 ### 🔄 Updates
