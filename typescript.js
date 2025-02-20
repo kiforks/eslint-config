@@ -24,7 +24,6 @@ const config = [
 			'@typescript-eslint/await-thenable': 'error',
 			'@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
 			'@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
-			'@typescript-eslint/explicit-function-return-type': ['error', { allowExpressions: true }],
 			'@typescript-eslint/ban-ts-comment': [
 				'error',
 				{
