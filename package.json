@@ -79,7 +79,7 @@
 		"@typescript-eslint/eslint-plugin": "^8.24.0",
 		"angular-eslint": "^19.1.0",
 		"eslint-config-angular-strict": "^1.1.5",
-		"eslint-config-prettier": "^10.0.1",
+		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-jasmine": "^4.2.2",
 		"eslint-plugin-jest": "^28.11.0",
 		"eslint-plugin-max-params-no-constructor": "^0.0.4",
