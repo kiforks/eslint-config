@@ -37,5 +37,7 @@ export default {
 		],
 		'no-use-before-define': 'off',
 		'max-statements': ['error', 15, { ignoreTopLevelFunctions: true }],
+		'max-classes-per-file': 'off',
+		'no-inline-comments': 'off',
 	},
 };
