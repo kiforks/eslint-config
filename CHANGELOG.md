@@ -1,5 +1,15 @@
 # 📝 Changelog
 
+## [1.2.5] - 2025-02-25
+
+### 🔄 Updates
+
+- **ESLint Rules Adjustment**  
+  Disabled the `max-classes-per-file` and `no-inline-comments` rules to provide more flexibility in code structure and commenting practices.  
+  [🔗 PR #13](https://github.com/kiforks/eslint-config/pull/13) by [@kiforks](https://github.com/kiforks)
+
+---
+
 ## [1.2.4] - 2025-02-20
 
 ### ✨ New Features
