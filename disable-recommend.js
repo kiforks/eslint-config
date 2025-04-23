@@ -39,5 +39,12 @@ export default {
 		'max-statements': ['error', 15, { ignoreTopLevelFunctions: true }],
 		'max-classes-per-file': 'off',
 		'no-inline-comments': 'off',
+		'id-length': [
+			'error',
+			{
+				min: 2,
+				exceptions: ['_', 'i', 'e', 'x', 'y', 'z', 'm'],
+			},
+		],
 	},
 };
