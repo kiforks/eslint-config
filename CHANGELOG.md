@@ -1,5 +1,41 @@
 # 📝 Changelog
 
+## [1.3.1] - 2025-04-23
+
+### 🐛 Fixes
+
+- **Dependencies**  
+  Add feature-sliced-design.js to files array in package.json
+
+---
+
+## [1.3.0] - 2025-04-23
+
+### ✨ New Features
+
+- **Extended File Support for Feature-Sliced Design**  
+  Updated `feature-sliced-design.js` to include `.ts`, `.tsx`, `.js`, and `.jsx` extensions for all layers to ensure consistent linting across all frontend file types.  
+  [🔗 PR #14](https://github.com/kiforks/eslint-config/pull/14) by [@kiforks](https://github.com/kiforks)
+
+- **ID Length Rule Added**  
+  Introduced the `id-length` rule to enforce a minimum identifier length of 2 characters, with exceptions for common short names (`i`, `j`, `x`, `y`, etc.).  
+  [🔗 PR #14](https://github.com/kiforks/eslint-config/pull/14) by [@kiforks](https://github.com/kiforks)
+
+
+### 🔄 Updates
+
+- **Angular Template Rule Update**  
+  Changed `checkId` from `false` to `true` in the `@angular-eslint/template/i18n` rule to improve template accessibility validation.  
+  [🔗 PR #14](https://github.com/kiforks/eslint-config/pull/14) by [@kiforks](https://github.com/kiforks)
+
+
+### 📦 Dependencies
+
+- **Package Updates**  
+  Updated core dependencies for compatibility with the latest versions of Angular and TypeScript tools
+
+---
+
 ## [1.2.5] - 2025-02-25
 
 ### 🔄 Updates
