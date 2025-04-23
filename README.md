@@ -48,30 +48,30 @@ _`eslint.config.js`_
 ```javascript
 import kiforAngularTemplate from '@kiforks/eslint-config/angular-template.js';
 import kiforAngularTypescript from '@kiforks/eslint-config/angular-typescript.js';
+import kiforJavascript from '@kiforks/eslint-config/javascript.js';
 import kiforJasmine from '@kiforks/eslint-config/tests-jasmine.js';
 import kiforJest from '@kiforks/eslint-config/tests-jest.js';
 import kiforTests from '@kiforks/eslint-config/tests.js';
 import kiforTypescript from '@kiforks/eslint-config/typescript.js';
-import kiforJavascript from '@kiforks/eslint-config/javascript.js';
 
 /** @type { import("eslint").Linter.Config[] } */
 export default [
-  ...kiforTypescript.map(config => ({
-    ...config,
-    languageOptions: {
-      ...config.languageOptions,
-      parserOptions: {
-        project: ['./tsconfig.base.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-  })),
-  ...kiforJavascript,
-  ...kiforAngularTemplate,
-  ...kiforAngularTypescript,
-  ...kiforTests,
-  ...kiforJasmine,
-  ...kiforJest
+	...kiforTypescript.map(config => ({
+		...config,
+		languageOptions: {
+			...config.languageOptions,
+			parserOptions: {
+				project: ['./tsconfig.base.json'],
+				tsconfigRootDir: import.meta.dirname,
+			},
+		},
+	})),
+	...kiforJavascript,
+	...kiforAngularTemplate,
+	...kiforAngularTypescript,
+	...kiforTests,
+	...kiforJasmine,
+	...kiforJest,
 ];
 ```
 
@@ -83,13 +83,13 @@ _`eslint.config.js`_
 
 ```javascript
 export default [
-  ...kiforTypescript,
-  {
-    rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
-      'jest/prefer-expect-assertions': 'off'
-    }
-  }
+	...kiforTypescript,
+	{
+		rules: {
+			'@typescript-eslint/no-explicit-any': 'off',
+			'jest/prefer-expect-assertions': 'off',
+		},
+	},
 ];
 ```
 
@@ -111,11 +111,26 @@ In your `eslint.config.js`, extend the `disable-recommend` configuration:
 import kiforDisableRecommend from '@kiforks/eslint-config/disable-recommend.js';
 
 /** @type { import("eslint").Linter.Config[] } */
-export default [
-  ...kiforDisableRecommend,
-];
-````
+export default [...kiforDisableRecommend];
+```
 
+## Feature-Sliced Design Configuration
+
+The `feature-sliced-design.js` configuration enforces architectural boundaries based on the [Feature-Sliced Design methodology](https://feature-sliced.github.io/documentation/docs). It restricts cross-layer imports to encourage modularity, scalability, and maintainability in frontend applications.
+
+### Key Features
+
+- Enforces layer isolation: shared, entities, features, widgets, pages, processes, app
+- Restricts disallowed import paths across layers
+- Works with `.ts`, `.tsx`, `.js`, `.jsx` files
+
+### Usage
+
+```javascript
+import kiforFeatureSliced from '@kiforks/eslint-config/feature-sliced-design.js';
+
+export default [...kiforFeatureSliced];
+```
 
 ## Usage in VSCode
 
