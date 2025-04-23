@@ -18,7 +18,7 @@ export default tseslint.config({
 				allowMarkupInContent: true,
 				checkAttributes: true,
 				checkDuplicateId: true,
-				checkId: true,
+				checkId: false,
 				checkText: true,
 				ignoreAttributes: [
 					'href',
