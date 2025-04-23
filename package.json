@@ -25,7 +25,8 @@
 		"angular-template.js",
 		"angular-typescript.js",
 		"javascript.js",
-		"disable-recommend.js"
+		"disable-recommend.js",
+		"feature-sliced-design.js"
 	],
 	"publishConfig": {
 		"access": "public"
