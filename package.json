@@ -68,33 +68,33 @@
 		"kifor"
 	],
 	"dependencies": {
-		"@angular-eslint/builder": "19.1.0",
-		"@angular-eslint/eslint-plugin": "19.1.0",
-		"@angular-eslint/eslint-plugin-template": "19.1.0",
-		"@angular-eslint/schematics": "19.1.0",
-		"@angular-eslint/template-parser": "19.1.0",
-		"@eslint/js": "^9.20.0",
-		"@stylistic/eslint-plugin-js": "^3.1.0",
-		"@stylistic/eslint-plugin-ts": "^3.1.0",
-		"@typescript-eslint/eslint-plugin": "^8.24.0",
-		"angular-eslint": "^19.1.0",
+		"@angular-eslint/builder": "19.3.0",
+		"@angular-eslint/eslint-plugin": "19.3.0",
+		"@angular-eslint/eslint-plugin-template": "19.3.0",
+		"@angular-eslint/schematics": "19.3.0",
+		"@angular-eslint/template-parser": "19.3.0",
+		"@eslint/js": "^9.25.1",
+		"@stylistic/eslint-plugin-js": "^4.2.0",
+		"@stylistic/eslint-plugin-ts": "^4.2.0",
+		"@typescript-eslint/eslint-plugin": "^8.31.0",
+		"angular-eslint": "^19.3.0",
 		"eslint-config-angular-strict": "^1.1.5",
-		"eslint-config-prettier": "^9.0.0",
+		"eslint-config-prettier": "^10.1.2",
 		"eslint-plugin-jasmine": "^4.2.2",
 		"eslint-plugin-jest": "^28.11.0",
 		"eslint-plugin-max-params-no-constructor": "^0.0.4",
-		"eslint-plugin-prettier": "^5.2.3",
-		"eslint-scope": "8.2.0",
-		"prettier": "^3.5.0",
-		"typescript-eslint": "^8.24.0",
-		"@typescript-eslint/parser": "^8.24.0"
+		"eslint-plugin-prettier": "^5.2.6",
+		"eslint-scope": "8.3.0",
+		"prettier": "^3.5.3",
+		"typescript-eslint": "^8.31.0",
+		"@typescript-eslint/parser": "^8.31.0"
 	},
 	"peerDependencies": {
 		"eslint": "^9.16.0"
 	},
 	"devDependencies": {
-		"@kiforks/prettier-config": "^1.0.2",
+		"@kiforks/prettier-config": "^1.0.3",
 		"husky": "^9.1.7",
-		"typescript": "^5.7.3"
+		"typescript": "^5.8.3"
 	}
 }
