@@ -1,5 +1,14 @@
 # 📝 Changelog
 
+## [1.3.1] - 2025-04-23
+
+### 🐛 Fixes
+
+- **Dependencies**  
+  Add feature-sliced-design.js to files array in package.json
+
+---
+
 ## [1.3.0] - 2025-04-23
 
 ### ✨ New Features
