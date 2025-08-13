@@ -4,6 +4,9 @@ export default {
 	rules: {
 		'dot-notation': 'off',
 		'capitalized-comments': 'off',
+		'class-methods-use-this': 'off',
+		'no-underscore-dangle': 'off',
+		camelcase: 'off',
 		'new-cap': [
 			'error',
 			{
