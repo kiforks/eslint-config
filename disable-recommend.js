@@ -2,6 +2,8 @@
 export default {
 	files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.js'],
 	rules: {
+		'dot-notation': 'off',
+		'capitalized-comments': 'off',
 		'new-cap': [
 			'error',
 			{
