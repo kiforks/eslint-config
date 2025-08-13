@@ -24,6 +24,17 @@ const config = [
 			'@typescript-eslint/await-thenable': 'error',
 			'@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
 			'@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
+			'@typescript-eslint/explicit-module-boundary-types': [
+				'error',
+				{
+					allowArgumentsExplicitlyTypedAsAny: false,
+					allowDirectConstAssertionInArrowFunctions: true,
+					allowHigherOrderFunctions: true,
+					allowOverloadFunctions: true,
+					allowTypedFunctionExpressions: true,
+					allowedNames: [],
+				},
+			],
 			'@typescript-eslint/no-unused-vars': [
 				'error',
 				{
