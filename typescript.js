@@ -158,6 +158,8 @@ const config = [
 			'max-params-no-constructor': maxParamsNoConstructor,
 		},
 		rules: {
+			'no-warning-comments': ['error', { terms: ['fixme'], location: 'anywhere' }],
+			'class-methods-use-this': ['error', { ignoreClassesWithImplements: 'all' }],
 			'max-len': ['error', 180],
 			'max-lines': ['error', 500],
 			'no-param-reassign': ['error', { props: false }],
