@@ -1,6 +1,5 @@
 import eslint from '@eslint/js';
-import stylisticJs from '@stylistic/eslint-plugin-js';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
+import stylistic from '@stylistic/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
 
 import maxParamsNoConstructor from 'eslint-plugin-max-params-no-constructor';
@@ -9,21 +8,38 @@ import tseslint from 'typescript-eslint';
 /** @type { import("eslint").Linter.Config[] } */
 const config = [
 	...tseslint.config({
-		extends: [
-			eslint.configs.recommended,
-			tseslint.configs.recommended,
-			tseslint.configs.strict,
-			tseslint.configs.stylistic,
-		],
+		extends: [eslint.configs.all, tseslint.configs.stylisticTypeChecked, tseslint.configs.strictTypeChecked],
 		rules: {
 			'@typescript-eslint/no-extraneous-class': ['error', { allowWithDecorator: true, allowStaticOnly: true }],
 			'@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
+			'@typescript-eslint/no-floating-promises': [
+				'error',
+				{
+					allowForKnownSafeCalls: ['bootstrap', 'renderComponent', 'renderModule', 'renderModuleAndBootstrap'],
+					allowForKnownSafePromises: ['bootstrap', 'renderComponent', 'renderModule', 'renderModuleAndBootstrap'],
+					checkThenables: false,
+					ignoreIIFE: false,
+					ignoreVoid: true,
+				},
+			],
 			'@typescript-eslint/prefer-destructuring': 'error',
 			'@typescript-eslint/sort-type-constituents': 'error',
 			'@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
 			'@typescript-eslint/await-thenable': 'error',
 			'@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
 			'@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
+			'@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
+			'@typescript-eslint/explicit-module-boundary-types': [
+				'error',
+				{
+					allowArgumentsExplicitlyTypedAsAny: false,
+					allowDirectConstAssertionInArrowFunctions: true,
+					allowHigherOrderFunctions: true,
+					allowOverloadFunctions: true,
+					allowTypedFunctionExpressions: true,
+					allowedNames: [],
+				},
+			],
 			'@typescript-eslint/no-unused-vars': [
 				'error',
 				{
@@ -142,11 +158,12 @@ const config = [
 
 	{
 		plugins: {
-			'@stylistic/js': stylisticJs,
-			'@stylistic/ts': stylisticTs,
+			'@stylistic': stylistic,
 			'max-params-no-constructor': maxParamsNoConstructor,
 		},
 		rules: {
+			'no-warning-comments': ['error', { terms: ['fixme'], location: 'anywhere' }],
+			'class-methods-use-this': ['error', { ignoreClassesWithImplements: 'all' }],
 			'max-len': ['error', 180],
 			'max-lines': ['error', 500],
 			'no-param-reassign': ['error', { props: false }],
@@ -172,8 +189,7 @@ const config = [
 			],
 
 			/* Stylistic */
-			'@stylistic/js/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
-			'@stylistic/js/padding-line-between-statements': [
+			'@stylistic/padding-line-between-statements': [
 				'error',
 				{ blankLine: 'always', prev: '*', next: 'block-like' },
 				{ blankLine: 'always', prev: 'block-like', next: '*' },
@@ -205,7 +221,7 @@ const config = [
 
 				{ blankLine: 'always', prev: 'block-like', next: 'block-like' },
 			],
-			'@stylistic/ts/lines-between-class-members': [
+			'@stylistic/lines-between-class-members': [
 				'error',
 				{
 					enforce: [

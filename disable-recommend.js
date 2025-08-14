@@ -2,6 +2,16 @@
 export default {
 	files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.js'],
 	rules: {
+		'@typescript-eslint/no-unsafe-assignment': 'off',
+		'@typescript-eslint/no-unsafe-member-access': 'off',
+		'@typescript-eslint/no-unsafe-argument': 'off',
+		'@typescript-eslint/no-unsafe-return': 'off',
+		'dot-notation': 'off',
+		'capitalized-comments': 'off',
+		'class-methods-use-this': 'off',
+		'no-underscore-dangle': 'off',
+		'sort-imports': 'off',
+		camelcase: 'off',
 		'new-cap': [
 			'error',
 			{
