@@ -131,6 +131,45 @@ import kiforFeatureSliced from '@kiforks/eslint-config/feature-sliced-design.js'
 
 export default [...kiforFeatureSliced];
 ```
+---
+## NestJS Configuration
+
+Add NestJS-specific linting for controllers, providers, and pipes.
+
+```js
+// eslint.config.js
+import kiforNest from '@kiforks/eslint-config/nestjs.js';
+
+export default [
+  ...kiforNest,
+];
+```
+
+**Notes**
+
+* Includes rules for DI usage, validation pipes, and common NestJS best practices.
+* Works with Express or Fastify projects.
+
+---
+
+## Storybook Configuration
+
+Enable rules for CSF stories and Storybook testing utilities.
+
+```js
+// eslint.config.js
+import kiforStorybook from '@kiforks/eslint-config/storybook.js';
+
+export default [
+  ...kiforStorybook,
+];
+```
+
+**Globs**
+
+* Targets `**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)` by default.
+
+---
 
 ## Usage in VSCode
 
