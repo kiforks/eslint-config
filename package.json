@@ -26,7 +26,9 @@
 		"angular-typescript.js",
 		"javascript.js",
 		"disable-recommend.js",
-		"feature-sliced-design.js"
+		"feature-sliced-design.js",
+		"storybook.js",
+		"nestjs.js"
 	],
 	"publishConfig": {
 		"access": "public"
@@ -69,32 +71,33 @@
 		"kifor"
 	],
 	"dependencies": {
-		"@angular-eslint/builder": "19.3.0",
-		"@angular-eslint/eslint-plugin": "19.3.0",
+		"@angular-eslint/builder": "20.1.1",
+		"@angular-eslint/eslint-plugin": "20.1.1",
 		"@angular-eslint/eslint-plugin-template": "19.3.0",
-		"@angular-eslint/schematics": "19.3.0",
+		"@angular-eslint/schematics": "20.1.1",
 		"@angular-eslint/template-parser": "19.3.0",
-		"@eslint/js": "^9.25.1",
-		"@stylistic/eslint-plugin-js": "^4.2.0",
-		"@stylistic/eslint-plugin-ts": "^4.2.0",
-		"@typescript-eslint/eslint-plugin": "^8.31.0",
-		"angular-eslint": "^19.3.0",
-		"eslint-config-angular-strict": "^1.1.5",
-		"eslint-config-prettier": "^10.1.2",
+		"@eslint/js": "^9.33.0",
+		"@stylistic/eslint-plugin": "^5.2.3",
+		"@typescript-eslint/eslint-plugin": "^8.0.0",
+		"@typescript-eslint/parser": "^8.39.1",
+		"angular-eslint": "^20.1.1",
+		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-jasmine": "^4.2.2",
-		"eslint-plugin-jest": "^28.11.0",
+		"eslint-plugin-jest": "^29.0.1",
 		"eslint-plugin-max-params-no-constructor": "^0.0.4",
-		"eslint-plugin-prettier": "^5.2.6",
-		"eslint-scope": "8.3.0",
-		"prettier": "^3.5.3",
-		"typescript-eslint": "^8.31.0",
-		"@typescript-eslint/parser": "^8.31.0"
+		"eslint-plugin-prettier": "^5.5.4",
+		"eslint-scope": "8.4.0",
+		"prettier": "^3.6.2",
+		"typescript-eslint": "^8.39.1"
 	},
 	"peerDependencies": {
-		"eslint": "^9.16.0"
+		"eslint": "^9.33.0"
 	},
 	"devDependencies": {
+		"@darraghor/eslint-plugin-nestjs-typed": "^6.7.1",
 		"@kiforks/prettier-config": "^1.0.3",
+		"eslint-plugin-nestjs": "^1.2.3",
+		"eslint-plugin-storybook": "^9.1.2",
 		"husky": "^9.1.7",
 		"typescript": "^5.8.3"
 	}
