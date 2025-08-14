@@ -1,5 +1,28 @@
 # 📝 Changelog
 
+## [1.4.0] - 2025-08-14
+
+### ✨ New Features
+
+* **NestJS config** – Added flat config with `eslint-plugin-nestjs` and `@darraghor/eslint-plugin-nestjs-typed`, key rules enabled, noisy typed rules disabled.
+* **Storybook config** – Added flat config presets (`recommended`, `csf`, `addon-interactions`), disabled `no-title-property-in-meta`.
+
+### 🔄 Updates
+
+* **Angular template rules** – Expanded accessibility, complexity, and trackBy checks; tuned i18n ignore lists.
+* **Angular TS rules** – Disabled strict selector/name checks; added test overrides.
+* **Disable-recommend preset** – Turned off several unsafe and stylistic rules.
+* **TypeScript base config** – Migrated to unified `@stylistic` plugin, updated rule keys.
+
+### 📦 Dependencies
+
+* Bumped ESLint peer to `^9.33.0`.
+* Added `typescript-eslint`, NestJS, and Storybook plugins.
+
+[🔗 Merge request](https://github.com/kiforks/eslint-config/pull/15) by [@kiforks](https://github.com/kiforks)
+
+---
+
 ## [1.3.1] - 2025-04-23
 
 ### 🐛 Fixes
