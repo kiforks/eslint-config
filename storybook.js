@@ -9,6 +9,7 @@ export default [
 	{
 		rules: {
 			'storybook/no-title-property-in-meta': 'off',
+			'no-magic-numbers': 'off',
 		},
 	},
 ].map(config => ({ ...config, files: ['**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)'] }));
