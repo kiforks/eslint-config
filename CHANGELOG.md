@@ -1,5 +1,21 @@
 # 📝 Changelog
 
+## [1.4.1] - 2025-09-04
+
+### 🔄 Updates
+
+* **Angular templates (tests & stories)** – Disabled i18n lint rule for Angular spec and Storybook story HTML files to simplify testing workflows.
+* **Storybook config** – Disabled `no-magic-numbers` to allow number literals in stories.
+
+### 📦 Dependencies
+
+* Bumped release metadata in package-lock.json.
+
+[🔗 Merge request](https://github.com/kiforks/eslint-config/pull/17) by [@kiforks](https://github.com/kiforks)
+
+---
+
+
 ## [1.4.0] - 2025-08-14
 
 ### ✨ New Features
@@ -19,7 +35,7 @@
 * Bumped ESLint peer to `^9.33.0`.
 * Added `typescript-eslint`, NestJS, and Storybook plugins.
 
-[🔗 Merge request](https://github.com/kiforks/eslint-config/pull/15) by [@kiforks](https://github.com/kiforks)
+[🔗 Merge request](https://github.com/kiforks/eslint-config/pull/16) by [@kiforks](https://github.com/kiforks)
 
 ---
 
