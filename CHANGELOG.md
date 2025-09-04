@@ -1,5 +1,19 @@
 # 📝 Changelog
 
+## [1.4.1] - 2025-09-04
+
+### 🔄 Updates
+
+* **Angular templates (tests & stories)** – Disabled i18n lint rule for Angular spec and Storybook story HTML files to simplify testing workflows.
+* **Storybook config** – Disabled `no-magic-numbers` to allow number literals in stories.
+
+### 📦 Dependencies
+
+* Bumped release metadata in package-lock.json.
+
+---
+
+
 ## [1.4.0] - 2025-08-14
 
 ### ✨ New Features
