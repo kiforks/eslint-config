@@ -16,8 +16,13 @@ export default tseslint.config(
 	{
 		files: ['**/*.spec.component.ts'],
 		rules: {
-			'@angular-eslint/template/i18n': 'off',
 			'@angular-eslint/component-max-inline-declarations': 'off',
+		},
+	},
+	{
+		files: ['**/*.spec.ts*.html', '**/*.stories.ts*.html'],
+		rules: {
+			'@angular-eslint/template/i18n': 'off',
 		},
 	}
 );
