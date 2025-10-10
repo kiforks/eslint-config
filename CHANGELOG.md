@@ -11,6 +11,8 @@
 
 * Bumped release metadata in package-lock.json.
 
+[🔗 Merge request](https://github.com/kiforks/eslint-config/pull/17) by [@kiforks](https://github.com/kiforks)
+
 ---
 
 
@@ -33,7 +35,7 @@
 * Bumped ESLint peer to `^9.33.0`.
 * Added `typescript-eslint`, NestJS, and Storybook plugins.
 
-[🔗 Merge request](https://github.com/kiforks/eslint-config/pull/15) by [@kiforks](https://github.com/kiforks)
+[🔗 Merge request](https://github.com/kiforks/eslint-config/pull/16) by [@kiforks](https://github.com/kiforks)
 
 ---
 
