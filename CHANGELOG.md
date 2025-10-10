@@ -1,5 +1,24 @@
 # 📝 Changelog
 
+## [1.5.0] - 2025-10-10
+
+### ✨ New Features
+
+* **Vitest config** – Added flat config with `@vitest/eslint-plugin`, provided Vitest globals and typecheck settings, and applied to `**/*.spec.ts`, `**/*.host.ts`, `**/*.po.ts` files by default.
+
+### 📚 Documentation
+
+* **README** – Added Vitest configuration usage section with import example and default file globs.
+
+### 📦 Dependencies
+
+* Added `@vitest/eslint-plugin` and updated Angular and TypeScript-related dependencies; bumped package version.
+
+[🔗 Merge request](https://github.com/kiforks/eslint-config/pull/18) by [@kiforks](https://github.com/kiforks)
+
+---
+
+
 ## [1.4.1] - 2025-09-04
 
 ### 🔄 Updates
