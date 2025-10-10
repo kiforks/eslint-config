@@ -51,6 +51,7 @@ import kiforAngularTypescript from '@kiforks/eslint-config/angular-typescript.js
 import kiforJavascript from '@kiforks/eslint-config/javascript.js';
 import kiforJasmine from '@kiforks/eslint-config/tests-jasmine.js';
 import kiforJest from '@kiforks/eslint-config/tests-jest.js';
+import kiforVitest from '@kiforks/eslint-config/vitest.js';
 import kiforTests from '@kiforks/eslint-config/tests.js';
 import kiforTypescript from '@kiforks/eslint-config/typescript.js';
 
@@ -71,7 +72,7 @@ export default [
 	...kiforAngularTypescript,
 	...kiforTests,
 	...kiforJasmine,
-	...kiforJest,
+	...kiforVitest,
 ];
 ```
 
@@ -171,6 +172,25 @@ export default [
 
 ---
 
+## Vitest Configuration
+
+Enable rules for Vitest tests.
+
+```js
+// eslint.config.js
+import kiforVitest from '@kiforks/eslint-config/vitest.js';
+
+export default [
+  ...kiforVitest,
+];
+```
+
+**Globs**
+
+* Targets `**/*.spec.ts`, `**/*.host.ts`, `**/*.po.ts` by default.
+
+---
+
 ## Usage in VSCode
 
 1. Install ESLint and the configuration.
@@ -183,9 +203,11 @@ export default [
 Add these scripts to your `package.json` for easier linting and formatting:
 
 ```json
-"scripts": {
-  "lint": "npx eslint '**/*.{ts,html,js}' --quiet",
-  "lint:fix": "npx eslint '**/*.{ts,html,js}' --quiet --fix"
+{
+  "scripts": {
+    "lint": "npx eslint '**/*.{ts,html,js}' --quiet",
+    "lint:fix": "npx eslint '**/*.{ts,html,js}' --quiet --fix"
+  }
 }
 ```
 
